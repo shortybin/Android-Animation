@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".valueanimationobject.ValueObjActivity">
         </activity>
+        <activity android:name=".objectAnimation.ObjectAnimationActivity">
+        </activity>
     </application>
 
 </manifest>
