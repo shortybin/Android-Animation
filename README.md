@@ -1,2 +1,2 @@
 # Animation
-Android animation demo
+Android property animation demo
