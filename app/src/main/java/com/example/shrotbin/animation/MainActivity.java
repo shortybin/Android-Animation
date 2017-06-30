@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mObjectAnimation;
     private Button mCustomObjectAnimation;
     private Button mSetAnimation;
+    private Button mEditAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +94,14 @@ public class MainActivity extends AppCompatActivity {
                         super.onAnimationEnd(animation);
                     }
                 });
+            }
+        });
+
+        mEditAnimation= (Button) findViewById(R.id.edit_animation);
+        mEditAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, EditAnimationActivity.class));
             }
         });
     }

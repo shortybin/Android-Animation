@@ -26,6 +26,8 @@
         </activity>
         <activity android:name=".animationset.AnimationSetActivity">
         </activity>
+        <activity android:name=".EditAnimationActivity">
+        </activity>
     </application>
 
 </manifest>
