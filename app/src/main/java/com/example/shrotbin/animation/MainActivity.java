@@ -1,7 +1,6 @@
 package com.example.shrotbin.animation;
 
 import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -88,12 +87,12 @@ public class MainActivity extends AppCompatActivity {
                 });
 
                 //AnimatorListenerAdapter 指定要实现的监听
-                mSetAnimation.animate().setListener(new AnimatorListenerAdapter() {
+                /*mSetAnimation.animate().setListener(new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationEnd(Animator animation) {
                         super.onAnimationEnd(animation);
                     }
-                });
+                });*/
             }
         });
 
