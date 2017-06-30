@@ -61,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
         mSetAnimation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //ViewPropertyAnimator用法
+                //mSetAnimation.animate().x(500).rotation(360).setDuration(5000);
+
                 startActivity(new Intent(MainActivity.this, AnimationSetActivity.class));
             }
         });
