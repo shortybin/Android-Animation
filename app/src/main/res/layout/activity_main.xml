@@ -27,4 +27,18 @@
         android:id="@+id/object_animation"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custom_obj_activity"
+        android:text="custom_obj_activity"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="set_animation"
+        android:id="@+id/set_animation"
+        />
+
 </LinearLayout>

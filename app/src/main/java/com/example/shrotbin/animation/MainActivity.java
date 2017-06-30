@@ -6,7 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.shrotbin.animation.animationset.AnimationSetActivity;
 import com.example.shrotbin.animation.objectAnimation.ObjectAnimationActivity;
+import com.example.shrotbin.animation.objectAnimation.customobjanimation.CustonObjAnimationActivity;
 import com.example.shrotbin.animation.valueanimation.ValueAnimationActivity;
 import com.example.shrotbin.animation.valueanimation.valueanimationobject.ValueObjActivity;
 
@@ -16,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mButton;
     private Button mObjButton;
     private Button mObjectAnimation;
+    private Button mCustomObjectAnimation;
+    private Button mSetAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ObjectAnimationActivity.class));
+            }
+        });
+
+        mCustomObjectAnimation= (Button) findViewById(R.id.custom_obj_activity);
+        mCustomObjectAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CustonObjAnimationActivity.class));
+            }
+        });
+
+        mSetAnimation= (Button) findViewById(R.id.set_animation);
+        mSetAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, AnimationSetActivity.class));
             }
         });
     }

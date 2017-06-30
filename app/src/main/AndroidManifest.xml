@@ -22,6 +22,10 @@
         </activity>
         <activity android:name=".objectAnimation.ObjectAnimationActivity">
         </activity>
+        <activity android:name=".objectAnimation.customobjanimation.CustonObjAnimationActivity">
+        </activity>
+        <activity android:name=".animationset.AnimationSetActivity">
+        </activity>
     </application>
 
 </manifest>
