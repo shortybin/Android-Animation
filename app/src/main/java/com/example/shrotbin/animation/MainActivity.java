@@ -1,5 +1,7 @@
 package com.example.shrotbin.animation;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -62,9 +64,35 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //ViewPropertyAnimator用法
-                //mSetAnimation.animate().x(500).rotation(360).setDuration(5000);
+                mSetAnimation.animate().x(500).rotation(360).setDuration(5000).setListener(new Animator.AnimatorListener() {
+                    @Override
+                    public void onAnimationStart(Animator animation) {
 
-                startActivity(new Intent(MainActivity.this, AnimationSetActivity.class));
+                    }
+
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        startActivity(new Intent(MainActivity.this, AnimationSetActivity.class));
+                    }
+
+                    @Override
+                    public void onAnimationCancel(Animator animation) {
+
+                    }
+
+                    @Override
+                    public void onAnimationRepeat(Animator animation) {
+
+                    }
+                });
+
+                //AnimatorListenerAdapter 指定要实现的监听
+                mSetAnimation.animate().setListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        super.onAnimationEnd(animation);
+                    }
+                });
             }
         });
     }
