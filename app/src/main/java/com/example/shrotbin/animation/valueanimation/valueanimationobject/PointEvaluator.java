@@ -1,4 +1,4 @@
-package com.example.shrotbin.animation.valueanimationobject;
+package com.example.shrotbin.animation.valueanimation.valueanimationobject;
 
 import android.animation.TypeEvaluator;
 

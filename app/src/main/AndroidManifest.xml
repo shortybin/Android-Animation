@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ValueAnimationActivity">
+        <activity android:name=".valueanimation.ValueAnimationActivity">
         </activity>
-        <activity android:name=".valueanimationobject.ValueObjActivity">
+        <activity android:name=".valueanimation.valueanimationobject.ValueObjActivity">
         </activity>
         <activity android:name=".objectAnimation.ObjectAnimationActivity">
         </activity>

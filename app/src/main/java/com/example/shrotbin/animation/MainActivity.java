@@ -7,7 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.shrotbin.animation.objectAnimation.ObjectAnimationActivity;
-import com.example.shrotbin.animation.valueanimationobject.ValueObjActivity;
+import com.example.shrotbin.animation.valueanimation.ValueAnimationActivity;
+import com.example.shrotbin.animation.valueanimation.valueanimationobject.ValueObjActivity;
 
 public class MainActivity extends AppCompatActivity {
 

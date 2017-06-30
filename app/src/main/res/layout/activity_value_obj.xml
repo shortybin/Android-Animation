@@ -5,9 +5,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.shrotbin.animation.valueanimationobject.ValueObjActivity">
+    tools:context=".valueanimation.valueanimationobject.ValueObjActivity">
 
-    <com.example.shrotbin.animation.valueanimationobject.PointView
+    <com.example.shrotbin.animation.valueanimation.valueanimationobject.PointView
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
