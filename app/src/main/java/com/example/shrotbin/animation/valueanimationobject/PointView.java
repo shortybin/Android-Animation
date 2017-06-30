@@ -21,7 +21,7 @@ import android.view.View;
 
 public class PointView extends View{
 
-    private float width=50f;
+    private float width=50f;//圆半径
     private Paint mPaint;
     private Point mPoint;
 
