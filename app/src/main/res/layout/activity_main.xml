@@ -49,4 +49,11 @@
         android:id="@+id/edit_animation"
         />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tween_animation"
+        android:id="@+id/tween_animation"
+        />
+
 </LinearLayout>

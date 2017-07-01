@@ -10,6 +10,7 @@ import android.widget.Button;
 import com.example.shrotbin.animation.animationset.AnimationSetActivity;
 import com.example.shrotbin.animation.objectAnimation.ObjectAnimationActivity;
 import com.example.shrotbin.animation.objectAnimation.customobjanimation.CustonObjAnimationActivity;
+import com.example.shrotbin.animation.tweenanimation.TweenAnimationActivity;
 import com.example.shrotbin.animation.valueanimation.ValueAnimationActivity;
 import com.example.shrotbin.animation.valueanimation.valueanimationobject.ValueObjActivity;
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mCustomObjectAnimation;
     private Button mSetAnimation;
     private Button mEditAnimation;
+    private Button mTweenAnimation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -101,6 +103,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, EditAnimationActivity.class));
+            }
+        });
+
+        mTweenAnimation= (Button) findViewById(R.id.tween_animation);
+        mTweenAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TweenAnimationActivity.class));
             }
         });
     }
